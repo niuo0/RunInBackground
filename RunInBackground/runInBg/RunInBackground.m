@@ -124,9 +124,11 @@
         NSLog(@"Error setCategory AVAudioSession: %@", error);
     }
     
+    NSLog(@"%d", audioSession.isOtherAudioPlaying);
+    
     NSError *activeSetError = nil;
     // 启动AudioSession，如果一个前台app正在播放音频则可能启动失败
-    [audioSession setActive:YES error:&activeSetError];
+    //[audioSession setActive:YES error:&activeSetError];
     if (activeSetError) {
         NSLog(@"Error activating AVAudioSession: %@", activeSetError);
     }
