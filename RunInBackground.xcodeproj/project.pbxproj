@@ -7,17 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07306BA6245C4BBA0032E38D /* RunInBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = 07306BA5245C4BBA0032E38D /* RunInBackground.m */; };
 		07899DA91F5967B800D3AAF8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 07899DA81F5967B800D3AAF8 /* main.m */; };
 		07899DAC1F5967B800D3AAF8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 07899DAB1F5967B800D3AAF8 /* AppDelegate.m */; };
 		07899DAF1F5967B800D3AAF8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07899DAE1F5967B800D3AAF8 /* ViewController.m */; };
 		07899DB21F5967B800D3AAF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07899DB01F5967B800D3AAF8 /* Main.storyboard */; };
 		07899DB41F5967B800D3AAF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07899DB31F5967B800D3AAF8 /* Assets.xcassets */; };
 		07899DB71F5967B800D3AAF8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07899DB51F5967B800D3AAF8 /* LaunchScreen.storyboard */; };
-		07899DC21F5967CE00D3AAF8 /* mysong.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 07899DBF1F5967CE00D3AAF8 /* mysong.mp3 */; };
-		07899DC31F5967CE00D3AAF8 /* RunInBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = 07899DC11F5967CE00D3AAF8 /* RunInBackground.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		07306BA3245C4BBA0032E38D /* RunInBackground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunInBackground.h; sourceTree = "<group>"; };
+		07306BA4245C4BBA0032E38D /* blank.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = blank.h; sourceTree = "<group>"; };
+		07306BA5245C4BBA0032E38D /* RunInBackground.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunInBackground.m; sourceTree = "<group>"; };
 		07899DA41F5967B800D3AAF8 /* RunInBackground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RunInBackground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07899DA81F5967B800D3AAF8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		07899DAA1F5967B800D3AAF8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -28,9 +30,6 @@
 		07899DB31F5967B800D3AAF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07899DB61F5967B800D3AAF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		07899DB81F5967B800D3AAF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		07899DBF1F5967CE00D3AAF8 /* mysong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mysong.mp3; sourceTree = "<group>"; };
-		07899DC01F5967CE00D3AAF8 /* RunInBackground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunInBackground.h; sourceTree = "<group>"; };
-		07899DC11F5967CE00D3AAF8 /* RunInBackground.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunInBackground.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,9 +87,9 @@
 		07899DBE1F5967CE00D3AAF8 /* runInBg */ = {
 			isa = PBXGroup;
 			children = (
-				07899DBF1F5967CE00D3AAF8 /* mysong.mp3 */,
-				07899DC01F5967CE00D3AAF8 /* RunInBackground.h */,
-				07899DC11F5967CE00D3AAF8 /* RunInBackground.m */,
+				07306BA4245C4BBA0032E38D /* blank.h */,
+				07306BA3245C4BBA0032E38D /* RunInBackground.h */,
+				07306BA5245C4BBA0032E38D /* RunInBackground.m */,
 			);
 			path = runInBg;
 			sourceTree = "<group>";
@@ -126,7 +125,7 @@
 				TargetAttributes = {
 					07899DA31F5967B800D3AAF8 = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = 7QFJ7CVQ97;
+						DevelopmentTeam = 8M25X9FW5Y;
 						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
@@ -141,6 +140,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -160,7 +160,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				07899DB71F5967B800D3AAF8 /* LaunchScreen.storyboard in Resources */,
-				07899DC21F5967CE00D3AAF8 /* mysong.mp3 in Resources */,
 				07899DB41F5967B800D3AAF8 /* Assets.xcassets in Resources */,
 				07899DB21F5967B800D3AAF8 /* Main.storyboard in Resources */,
 			);
@@ -173,7 +172,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07899DC31F5967CE00D3AAF8 /* RunInBackground.m in Sources */,
+				07306BA6245C4BBA0032E38D /* RunInBackground.m in Sources */,
 				07899DAF1F5967B800D3AAF8 /* ViewController.m in Sources */,
 				07899DAC1F5967B800D3AAF8 /* AppDelegate.m in Sources */,
 				07899DA91F5967B800D3AAF8 /* main.m in Sources */,
@@ -296,15 +295,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 7QFJ7CVQ97;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Hui Niu (9CVZQR49ST)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Hui Niu (9CVZQR49ST)";
+				DEVELOPMENT_TEAM = 8M25X9FW5Y;
 				INFOPLIST_FILE = RunInBackground/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cike.RunInBackground;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "29879d2c-57d3-4522-9a0f-b3ad9b24b3c9";
-				PROVISIONING_PROFILE_SPECIFIER = "CikeLive ALL Developer";
+				PROVISIONING_PROFILE_SPECIFIER = Develope_All;
 			};
 			name = Debug;
 		};
